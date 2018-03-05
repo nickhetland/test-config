@@ -3,9 +3,6 @@ foo: baz
 ---
 spring:
   profiles: development
-  cloud:
-    config:
-      uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@${PREFIX:}configserver.${application.domain:cfapps.io}}
-oauth2:
-  client:
-    tokenUri: ${vcap.services.${PREFIX:}sso.credentials.tokenUri:}
+test: yes
+bar:
+  hello: more
